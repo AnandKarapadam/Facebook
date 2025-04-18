@@ -1,0 +1,835 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #f2f4f7;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
+
+}
+
+.navbar .fb-logo img {
+    width: 40px;
+    height: 40px;
+    margin-top: 4px;
+}
+
+.navbar .search-bar {
+    width: 240px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 12px;
+    margin: 0 8px;
+    background: #f0f2f5;
+    cursor: pointer;
+}
+
+.navbar .search-bar i {
+    margin-right: 10px;
+    color: #65686c;
+}
+
+.navbar .search-bar input {
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background: #f0f2f5;
+}
+
+.middle-icons {
+    display: flex;
+    gap: 10px;
+    margin-left: 27px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.middle-icons div {
+    width: 110px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle-icons div:hover {
+    height: 50px;
+    border-radius: 5px;
+    background: #f0f2f5;
+}
+
+.middle-icons div i {
+    font-size: 22px;
+    color: #65686c;
+}
+
+.middle-icons .home-icon i {
+    color: #0866ff;
+}
+
+.middle-icons .home-icon {
+    border-bottom: 3px solid #0866ff;
+}
+
+.middle-icons .home-icon:hover {
+    height: 55px;
+    border-radius: 0;
+    border-bottom: 3px solid #0866ff;
+    background: #fff;
+}
+
+.right-portion {
+    margin-left: 135px;
+    display: flex;
+    align-items: center;
+}
+
+.right-portion button {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin-right: 8px;
+    background: #e2e5e9;
+    cursor: pointer;
+}
+
+.right-portion button i {
+    font-size: 20px;
+}
+
+.right-portion .grid img {
+    width: 22px;
+}
+
+.right-portion .arrow {
+    right: 22px;
+    top: 35px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    background: #e2e5e9;
+}
+
+.right-portion .arrow i {
+    font-size: 9px;
+}
+
+/*SECTION ONE MAIN*/
+/* SECTION ONE */
+
+.sectionmain {
+    position: fixed;
+    display: flex;
+}
+
+.section-one {
+    top: 56px;
+    width: 22%;
+    height: 570px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 16px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: #f2f4f7;
+}
+
+.section-one div {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.section-one div:hover {
+    background: #e2e5e9;
+}
+
+.section-one:hover {
+    overflow-y: visible;
+}
+
+.section-one #usericonid {
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 5px;
+    margin-right: 10px;
+    background: #f2f4f7;
+}
+
+.section-one div img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.section-one #arrowicon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 10px;
+    background: #e2e5e9;
+}
+
+footer .footer {
+    display: inline;
+    margin-left: -12px;
+}
+
+.footer a {
+    margin: 0 5px;
+    text-decoration: none;
+    flex-direction: row;
+    font-size: 12px;
+    color: #65686c;
+}
+
+.footer:no-hover:hover {
+    background: #f0f2f5;
+    pointer-events: none;
+}
+
+
+ /* SECTION TWO */
+.section-two {
+    top: 70px;
+    width: 56%;
+    height: 100vh;
+    position: relative;
+    padding: 0 100px;
+    overflow-y: auto;
+    scrollbar-width: 1px;
+}
+
+.section-two div {
+    margin-bottom: 15px;
+}
+
+.section-two::-webkit-scrollbar {
+    display: none;
+}
+
+.section-two .firstdiv {
+    width: 100%;
+    height: 120px;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+
+.firstdiv div {
+    display: flex;
+}
+
+.firstdiv i {
+    margin-right: 10px;
+    font-size: 40px;
+    color: #65686c;
+}
+
+.firstdiv input {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    background: #f0f2f5;
+}
+
+.firstdiv hr {
+    height: 0.5px;
+    background-color: rgb(235, 235, 235);
+    border: none;
+}
+
+.firstdiv .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstdiv button {
+    width: 155px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 20px;
+    font-size: 14px;
+    background: #fff;
+    color: #65686c;
+    cursor: pointer;
+}
+
+.firstdiv button:hover {
+    background: #f0f2f5;
+}
+
+.firstdiv button img {
+    margin-right: 10px;
+}
+
+.seconddiv {
+    width: 100%;
+    height: 77px;
+    position: relative;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    background: #fff;
+}
+
+.seconddiv .secondelements {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.secondelements {
+    height: 60px;
+    padding-top: 15px;
+    border-radius: 8px;
+}
+
+.secondelements:hover {
+    background: #f0f2f5;
+}
+
+.secondelements button {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 17px;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    color: #0866ff;
+    background: #ebf5ff;
+    cursor: pointer;
+}
+
+.secondelements span {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.secondelements p {
+    color: #65686c;
+}
+
+.thirddiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    background: #fff;
+}
+
+#thirddiv {
+    width: 505px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    background: #fff;
+}
+
+#thirddiv #thirddiv-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#thirddiv-text span {
+    font-weight: 500;
+    font-size: 17px;
+    color: #65686c;
+}
+
+#thirddiv-text button {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 17px;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#thirddiv-text button:hover {
+    background: #e2e5e9;
+}
+
+#thirddiv-text button i {
+    color: grey;
+}
+
+#card-section {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+}
+
+#card-section .card-friend {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+
+}
+
+.card-friend .absolute-btn {
+    top: 10px;
+    left: 140px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+
+.card-friend .absolute-btn i {
+    margin-left: 8px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.card-friend img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-friend button {
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    background: #ebf5ff;
+    color: #0866ff;
+}
+
+.card-friend span {
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.card-friend button i {
+    margin-right: 8px;
+    color: #0866ff;
+}
+
+#seeall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#seeall p {
+    font-size: 15px;
+    font-weight: 450;
+    color: #0866ff;
+}
+
+#reeldiv {
+    width: 505px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    background: #fff;
+}
+
+.reel-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.reel-container i {
+    font-size: 25px;
+}
+
+.reel-container span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.reel-container p {
+    margin-left: auto;
+    margin-right: 10px;
+    font-weight: 500;
+    color: #0866ff;
+}
+
+.reel-container button {
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    margin-top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: transparent;
+    font-size: 15px;
+    margin-right: 10px;
+    color: grey;
+}
+
+.reel-container button:hover {
+    background: #c1c6ca;
+}
+
+.outer-reelsec {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+
+}
+
+.reelsection {
+    width: 200px;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.reelsection video {
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 10px;
+}
+
+.reelsection button {
+    top: 10px;
+    left: 180px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    border: none;
+    background: transparent;
+}
+
+.reelsection button i {
+    color: #c1c6ca;
+}
+
+#reeldiv #seemore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0866ff;
+}
+
+.postheading {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 15px;
+}
+
+.postuser img {
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.postheading .username {
+    font-weight: 500;
+}
+
+.username:hover {
+    text-decoration: underline;
+}
+
+.username span {
+    font-weight: normal;
+    color: #0866ff;
+}
+
+.postheading .postdate {
+    font-size: 14px;
+    margin-top: 2px;
+    font-weight: 500;
+    color: #65686c;
+}
+
+.closeicon {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.closeicon button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #fff;
+}
+
+.closeicon i {
+    text-align: center;
+    font-size: 20px;
+    color: #65686c;
+}
+
+.closeicon button:hover {
+    background: #f0f2f5;
+}
+
+.postimage {
+    display: flex;
+    margin-top: -10px;
+}
+
+.postimage img {
+    width: 100%;
+    height: 100%;
+}
+
+.postvideo video {
+    width: 100%;
+    height: 100%;
+}
+
+.postfooter {
+    width: 100%;
+    padding: 15px;
+    margin-top: -30px;
+}
+
+.likespace {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    overflow: hidden;
+}
+
+.likespace .like {
+    display: flex;
+    color: #65686c;
+    gap: 5px;
+}
+
+.like img {
+    width: 20px;
+    height: 20px;
+}
+
+.commentshare {
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+    color: #65686c;
+}
+
+.commentshare i {
+    margin-right: 5px;
+}
+
+.reactionsec {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.reactionsec button {
+    height: 35px;
+    flex: 1;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #65686c;
+    padding: 5px;
+    text-align: center;
+}
+
+.reactionsec button:hover {
+    background: #f0f2f5;
+}
+
+.reactionsec button i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.reactionsec button span {
+    font-size: 15px;
+    font-weight: 500;
+}
+ /* SECTION THREE */
+.section-three {
+    width: 21.8%;
+    height: 100px;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.section-three span {
+    font-weight: 500;
+    color: #65686c;
+}
+
+.sponserdiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 8px;
+}
+
+.sponserdiv:hover {
+    background: #e2e5e9;
+}
+
+.sponserdiv img {
+    width: 100px;
+    height: 100px;
+    border-radius: 9px;
+    margin-right: 10px;
+}
+
+.sponsertext h4 {
+    font-weight: 600;
+}
+
+.sponsertext p {
+    font-size: 14px;
+    color: #65686c;
+}
+
+.section-three hr {
+    height: 1px;
+    margin-top: 10px;
+    border: none;
+    background-color: #c1c6ca;
+}
+
+.groupchat {
+    margin-top: 20px;
+}
+
+.groupchat p {
+    margin-top: 20px;
+}
+
+.groupchat button {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50px;
+    outline: none;
+    border: 0;
+    background: #e2e5e9;
+}
+
+.groupchat {
+    font-weight: 500;
+}
